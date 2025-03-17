@@ -39,6 +39,9 @@
   &nbsp;•&nbsp;
   <a href="https://invidious.io/donate/">Donate</a>
 
+<h3> Fork Notice </h3>
+This repository is a fork of <a href="https://github.com/iv-org/invidious">Invidious</a> for the purposes of the Erix Cloud hosted version. This version is likely a re-skin of the original project, with some changes to production settings and deployment. Please do not contribute to this project, as it is not the original project. All contributions should go to the upstream version. If you like this fork, we strongly recommend donating to the original project linked above. Thank you!
+
   <h5>Chat with us:</h5>
   <a href="https://matrix.to/#/#invidious:matrix.org">
     <img alt="Matrix" src="https://img.shields.io/matrix/invidious:matrix.org?label=Matrix&color=darkgreen">

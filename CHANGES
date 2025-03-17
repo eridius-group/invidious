@@ -1,0 +1,4 @@
+- Changed the branding from "Invidious" to "Erix YouTube"
+- Changed the default theme to the Eridius green and black theme
+- Changed the README to reflect that this is a soft-fork and credit belongs to original creators
+- Changed the docker-compose.yml to a simpler deploy version (tokens will need to be changed in production)

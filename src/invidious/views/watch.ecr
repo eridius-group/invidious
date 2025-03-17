@@ -7,7 +7,7 @@
 <meta name="thumbnail" content="<%= thumbnail %>">
 <meta name="description" content="<%= HTML.escape(video.short_description) %>">
 <meta name="keywords" content="<%= video.keywords.join(",") %>">
-<meta property="og:site_name" content="<%= author %> | Invidious">
+<meta property="og:site_name" content="<%= author %> | Erix YouTube">
 <meta property="og:url" content="<%= HOST_URL %>/watch?v=<%= video.id %>">
 <meta property="og:title" content="<%= title %>">
 <meta property="og:image" content="<%= HOST_URL %>/vi/<%= video.id %>/maxres.jpg">
@@ -28,7 +28,7 @@
 <meta name="twitter:player:height" content="720">
 <link rel="alternate" href="https://www.youtube.com/watch?v=<%= video.id %>">
 <%= rendered "components/player_sources" %>
-<title><%= title %> - Invidious</title>
+<title><%= title %> - Erix YouTube</title>
 
 <!-- Description expansion also updates the 'Show more' button to 'Show less' so
 we're going to need to do it here in order to allow for translations.

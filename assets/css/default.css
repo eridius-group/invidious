@@ -4,9 +4,7 @@
 
 html,
 body {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica,
-    Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 #contents {
@@ -76,8 +74,8 @@ body {
 }
 
 body a.channel-owner {
-  background-color: #008bec;
-  color: #fff;
+  background-color: #042c28;
+  color: #c1cece;
   border-radius: 9px;
   padding: 1px 6px;
 }
@@ -161,13 +159,13 @@ button.pure-button-primary,
 body a.pure-button-primary,
 .channel-owner:hover,
 .channel-owner:focus {
-  background-color: #a0a0a0;
+  background-color: #c1cece;
   color: rgba(35, 35, 35, 1);
 }
 
 .pure-button-primary,
 .pure-button-secondary {
-  border: 1px solid #a0a0a0;
+  border: 1px solid #c1cece;
   border-radius: 3px;
   margin: 0 .4em;
 }
@@ -240,13 +238,13 @@ div.thumbnail > .bottom-right-overlay {
 .length {
   padding: 1px;
   margin: -2px 0;
-  color: #fff;
+  color: #c1cece;
   border-radius: 3px;
 }
 
 .length, .top-left-overlay button {
-  color: #eee;
-  background-color: rgba(35, 35, 35, 0.85) !important;
+  color: #c1cece;
+  background-color: #042c28 !important;
 }
 
 
@@ -292,8 +290,8 @@ div.thumbnail > .bottom-right-overlay {
 	margin: 1px;
 
 	border: 1px solid;
-	border-color: rgba(0,0,0,0);
-	border-bottom-color: #CCC;
+	border-color: #c1cece;
+	border-bottom-color: #c1cece;
 	border-radius: 0;
 
 	box-shadow: none;
@@ -304,7 +302,7 @@ div.thumbnail > .bottom-right-overlay {
 .searchbar input[type="search"]:focus {
 	margin: 0;
 	border: 2px solid;
-	border-color: rgba(0,0,0,0);
+	border-color: #c1cece;
 	border-bottom-color: #FED;
 }
 
@@ -324,7 +322,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .searchbar #searchbutton:hover {
-  color: rgb(0, 182, 240);
+  color: #042c28;
 }
 
 .user-field {
@@ -467,19 +465,19 @@ footer {
 }
 
 .light-theme footer {
-  color: #7c7c7c;
+  color: #c1cece;
 }
 
 .dark-theme footer {
-  color: #adadad;
+  color: #042c28;
 }
 
 .light-theme footer a {
-  color: #7c7c7c !important;
+  color: #c1cece !important;
 }
 
 .dark-theme footer a {
-  color: #adadad !important;
+  color: #042c28 !important;
 }
 
 footer span {
@@ -517,25 +515,25 @@ span > select {
 .light-theme summary:hover,
 .light-theme a:focus,
 .light-theme summary:focus {
-  color: #075A9E !important;
+  color: #042c28 !important;
 }
 
 .light-theme .pure-button-primary:hover,
 .light-theme .pure-button-primary:focus,
 .light-theme .pure-button-secondary:hover,
 .light-theme .pure-button-secondary:focus {
-  color: #fff !important;
-  border-color: rgba(0, 182, 240, 0.75) !important;
-  background-color: rgba(0, 182, 240, 0.75) !important;
+  color: #042c28 !important;
+  border-color: #042c28 !important;
+  background-color: #042c28 !important;
 }
 
 .light-theme .pure-button-secondary:not(.low-profile) {
-  color: #335d7a;
-  background-color: #fff2;
+  color: #042c28;
+  background-color: #042c28;
 }
 
 .light-theme a {
-  color: #335d7a;
+  color: #042c28;
   text-decoration: none;
 }
 
@@ -543,11 +541,11 @@ span > select {
 .light-theme a:not([data-id]) > .icon,
 .light-theme .pure-u-lg-1-5 > .h-box > a[href^="/watch?"],
 .light-theme .playlist-restricted > ol > li > a {
-  color: #303030;
+  color: #042c28;
 }
 
 .light-theme .pure-menu-heading {
-  color: #565d64;
+  color: #042c28;
 }
 
 @media (prefers-color-scheme: light) {
@@ -556,25 +554,25 @@ span > select {
   .no-theme summary:hover,
   .no-theme a:focus,
   .no-theme summary:focus {
-    color: #075A9E !important;
+    color: #c1cece !important;
   }
 
   .no-theme .pure-button-primary:hover,
   .no-theme .pure-button-primary:focus,
   .no-theme .pure-button-secondary:hover,
   .no-theme .pure-button-secondary:focus {
-    color: #fff !important;
-    border-color: rgba(0, 182, 240, 0.75) !important;
-    background-color: rgba(0, 182, 240, 0.75) !important;
+    color: #c1cece !important;
+    border-color: #c1cece !important;
+    background-color: #c1cece !important;
   }
 
   .no-theme .pure-button-secondary:not(.low-profile) {
-    color: #335d7a;
-    background-color: #fff2;
+    color: #c1cece;
+    background-color: #042c28;
   }
 
   .no-theme a {
-    color: #335d7a;
+    color: #c1cece;
     text-decoration: none;
   }
 
@@ -582,19 +580,19 @@ span > select {
   .no-theme a:not([data-id]) > .icon,
   .no-theme .pure-u-lg-1-5 > .h-box > a[href^="/watch?"],
   .no-theme .playlist-restricted > ol > li > a {
-    color: #303030;
+    color: #c1cece;
   }
 
   .no-theme footer {
-    color: #7c7c7c;
+    color: #c1cece;
   }
 
   .no-theme footer a {
-    color: #7c7c7c !important;
+    color: #c1cece !important;
   }
 
   .light-theme .pure-menu-heading {
-    color: #565d64;
+    color: #c1cece;
   }
 }
 
@@ -615,32 +613,32 @@ span > select {
 .dark-theme .pure-button-primary:focus,
 .dark-theme .pure-button-secondary:hover,
 .dark-theme .pure-button-secondary:focus {
-  color: #fff !important;
-  border-color: rgb(0, 182, 240) !important;
-  background-color: rgba(0, 182, 240, 1) !important;
+  color: #c1cece !important;
+  border-color: #042c28 !important;
+  background-color: #042c28 !important;
 }
 
 .dark-theme .pure-button-secondary {
-  background-color: #0002;
-  color: #ddd;
+  background-color: #042c28;
+  color: #c1cece;
 }
 
 .dark-theme a {
-  color: #adadad;
+  color: #c1cece;
   text-decoration: none;
 }
 
 body.dark-theme {
-  background-color: rgba(35, 35, 35, 1);
-  color: #f0f0f0;
+  background-color: #042c28;
+  color: #c1cece;
 }
 
 .dark-theme .pure-form legend {
-  color: #f0f0f0;
+  color: #c1cece;
 }
 
 .dark-theme .pure-menu-heading {
-  color: #f0f0f0;
+  color: #c1cece;
 }
 
 .dark-theme input,
@@ -650,7 +648,7 @@ body.dark-theme {
 }
 
 .dark-theme .pure-form input[type="file"] {
-  color: #f0f0f0;
+  color: #c1cece;
 }
 
 .dark-theme .searchbar input {
@@ -662,49 +660,49 @@ body.dark-theme {
   .no-theme a:hover,
   .no-theme a:active,
   .no-theme a:focus {
-    color: rgb(0, 182, 240);
+    color: #c1cece;
   }
 
   .no-theme .pure-button-primary:hover,
   .no-theme .pure-button-primary:focus,
   .no-theme .pure-button-secondary:hover,
   .no-theme .pure-button-secondary:focus {
-    color: #fff !important;
-    border-color: rgb(0, 182, 240) !important;
-    background-color: rgba(0, 182, 240, 1) !important;
+    color: #c1cece !important;
+    border-color: #042c28 !important;
+    background-color: #042c28 !important;
   }
 
   .no-theme .pure-button-secondary {
-    background-color: #0002;
-    color: #ddd;
+    background-color: #042c28;
+    color: #c1cece;
   }
 
   .no-theme a {
-    color: #adadad;
+    color: #c1cece;
     text-decoration: none;
   }
 
   body.no-theme {
-    background-color: rgba(35, 35, 35, 1);
-    color: #f0f0f0;
+    background-color: #042c28;
+    color: #c1cece;
   }
 
   .no-theme .pure-form legend {
-    color: #f0f0f0;
+    color: #c1cece;
   }
 
   .no-theme .pure-menu-heading {
-    color: #f0f0f0;
+    color: #c1cece;
   }
 
   .no-theme input,
   .no-theme select,
   .no-theme textarea {
-    color: rgba(35, 35, 35, 1);
+    color: #c1cece;
   }
 
   .no-theme .pure-form input[type="file"] {
-    color: #f0f0f0;
+    color: #c1cece;
   }
 
   .no-theme .searchbar input {
@@ -713,11 +711,11 @@ body.dark-theme {
   }
 
   .no-theme footer {
-    color: #adadad;
+    color: #c1cece;
   }
 
   .no-theme footer a {
-    color: #adadad !important;
+    color: #c1cece !important;
   }
 }
 
@@ -797,7 +795,7 @@ h1, h2, h3, h4, h5, p,
 
 /* Select all the music items except the first one */
 .music-item + .music-item {
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid #c1cece;
 }
 
 /* Center the "invidious" logo on the search page */

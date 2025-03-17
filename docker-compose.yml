@@ -13,7 +13,7 @@ services:
       dockerfile: docker/Dockerfile
     restart: unless-stopped
     ports:
-      - "127.0.0.1:3000:3000"
+      - "3000:3000"
     environment:
       # Please read the following file for a comprehensive list of all available
       # configuration options and their associated syntax:
@@ -26,16 +26,40 @@ services:
           host: invidious-db
           port: 5432
         check_tables: true
-        # external_port:
-        # domain:
+        invidious_companion:
+          - private_url: "http://companion:8282"
+          - public_url: "http://localhost:8282"
+        invidious_companion_key: 9y758kwwYdVycue6mgwqbkckHPyJZNpe
+        visitor_data: "uVBg2MguASULqNbNxZ4GDPXyeythgSsH"
+        po_token: "9tD6ZWnHfhWpMKnLstB9gmcwUESBBqj9"
         # https_only: false
         # statistics_enabled: false
-        hmac_key: "CHANGE_ME!!"
+        hmac_key: "Z2KC5vTCYZGzQLwAfkjBGHr5uKwW2M5G"
     healthcheck:
       test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/trending || exit 1
       interval: 30s
       timeout: 5s
       retries: 2
+
+
+  companion:
+    image: quay.io/invidious/invidious-companion:latest
+    environment:
+      - SERVER_SECRET_KEY=9y758kwwYdVycue6mgwqbkckHPyJZNpe
+    restart: unless-stopped
+    ports:
+      - "8282:8282"
+    logging:
+      options:
+        max-size: "1G"
+        max-file: "4"
+    cap_drop:
+      - ALL
+    read_only: true
+    volumes:
+      - companioncache:/var/tmp/youtubei.js:rw
+    security_opt:
+      - no-new-privileges:true
 
   invidious-db:
     image: docker.io/library/postgres:14
@@ -53,3 +77,4 @@ services:
 
 volumes:
   postgresdata:
+  companioncache:
